@@ -1,0 +1,125 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+body{
+    background-color: #455555;
+    display : flex;
+    justify-content: center;
+    align-items : center ;
+    width : 100vw;
+    height : 100vh;
+}
+
+
+.box{
+    display : flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.5rem;
+}
+i{
+    margin : 20px;
+    
+    
+}
+img{
+    width : 30px;
+}
+.select{
+    border : none;
+    outline : none;
+    font-size: 1.4rem;
+    background-color: transparent;
+
+}
+input{
+    outline: none;
+    padding : 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    /* border : 2px solid black; */
+}
+
+.selectBox{
+    border: 1px solid rgb(181, 180, 180);
+
+    display : flex;
+    width : 15vw;
+    align-items: center; 
+    justify-content: space-between;
+    border-radius: 10px; 
+    padding : 3px;
+}
+
+.input p{
+    font-size: 1.5rem;
+}
+
+
+.containor{
+    background-color: white;
+    width : auto;
+    height : auto;
+    border-radius : 10px;
+    width: 40vw;
+    min-height: 45vh;
+    padding : 20px;
+    
+}
+
+h2,.input,.box,.result,.btn{
+    margin : 20px 0px;
+}
+h2{
+    font-size : 2rem;
+}
+.box,.btn,i{
+    cursor : pointer;
+}
+.result{
+    margin-top: 40px;
+    
+        font-size : 1.4rem;
+}
+
+.btn{
+    width: 100%;
+    padding : 10px;
+    border-radius: 10px;
+    background-color: #8c5ef5;
+}
+
+@media only screen and (max-width : 1009px){
+    .box{
+        flex-wrap: wrap;
+    }
+    .fromBox,.toBox{
+        width : 100%;
+        
+    }
+    i{
+        margin : 15px auto;
+        transform: rotate(90deg);
+    }
+    
+    .containor{
+        width: 80vw;
+        display: flex;
+        flex-direction : column;
+        justify-content:space-between;
+    }
+    .selectBox{
+       justify-content: space-between;
+        width : 70vw;
+        padding : 1.5vh;
+    }
+
+    .result{
+        font-size : 1.4rem;
+    }
+    
+    
+}
